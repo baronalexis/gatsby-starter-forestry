@@ -49,26 +49,15 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(
-      fields: {
-        slug: {
-          eq: $slug
-        }
-      }
-      sort: {
-        fields: [frontmatter___date]
-        order: ASC
-      })
-      {
-
+      fields: { slug: { eq: $slug } }
+      sort: { order: ASC, fields: [frontmatter___date] }
+      ) {
       id
       excerpt
       html
       frontmatter {
         title
-        date(
-          formatString: "YYYY"
-          locale: "fr-FR"
-          )
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
