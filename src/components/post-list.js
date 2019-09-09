@@ -12,7 +12,7 @@ const PostList = ({ posts }) => (
         <p>
           <em class="has-text-grey">{node.excerpt}</em>
         </p>
-        <Link to={node.fields.slug}>Read More &raquo;</Link>
+        <Link to={node.fields.slug}>Lire la suite &raquo;</Link>
       </div>
     ))}
   </section>
