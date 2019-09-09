@@ -55,7 +55,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(
-          formatString: "DD/MM/YYYY"
+          formatString: "YYYY"
           locale: "fr-FR"
           )
       }
