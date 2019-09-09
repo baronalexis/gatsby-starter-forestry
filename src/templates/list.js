@@ -48,7 +48,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(
+    allMarkdownRemark(
       fields: { slug: { eq: $slug } }
       sort: { order: ASC, fields: [frontmatter___date] }
       ) {
