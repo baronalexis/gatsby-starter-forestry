@@ -8,5 +8,9 @@ fields:
 - type: datetime
   name: date
   label: Date
+  hidden: true
+  config:
+    date_format: DD/MM/YYYY
+  default: now
 pages:
 - src/pages/posts/vive-la-pizza.md
