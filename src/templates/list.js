@@ -49,7 +49,6 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      fields: { slug: { eq: $slug } }
       sort: { order: ASC, fields: [frontmatter___date] }
       ) {
       id
