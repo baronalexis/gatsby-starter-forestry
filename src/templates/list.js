@@ -51,7 +51,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       sort: {
         fields: [frontmatter___date]
-        order: DESC
+        order: ASC
       }
       id
       excerpt
