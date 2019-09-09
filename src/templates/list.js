@@ -48,11 +48,18 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: {
+        slug: {
+          eq: $slug
+        }
+      }
       sort: {
         fields: [frontmatter___date]
         order: ASC
-      }
+      })
+      {
+
       id
       excerpt
       html
